@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var num1 = prompt("Enter First Number :");
+        var num2 = prompt("Enter Second Number :");
+        var result;
+        var oper = prompt("Enter the Operator Or Sign (+, -, *, / or %)");
+        if (oper === "+") {
+    
+          //JS  ,Treat's Number's as string so, when we add them it concatenate it. so Addition is not possible without Using Chapter 29, Function/Method "Number."
+          
+          num1 = Number(num1);
+          num2 = Number(num2);
+          result = (num1 + num2);
+          alert(num1 + " " + "+" + " " + num2  + " " + "=" + " " + result);
+        }
+        else if (oper === "-") {
+          result = num1 - num2;
+          alert(num1 + " " + "-" + " " + num2  + " " + "=" + " " + result); 
+        }
+        else if (oper === "*") {
+          result = num1 * num2;
+          alert(num1 + " " + "*" + " " + num2  + " " + "=" + " " + result);  
+        }
+        else if (oper === "/") {
+          result = num1 / num2;
+          alert(num1 + " " + "/" + " " + num2  + " " + "=" + " " + result); 
+        }
+        else if (oper === "%") {
+          result = num1 % num2;
+          alert(num1 + " " + "%" + " " + num2  + " " + "=" + " " + result);  
+        }
+        else{
+            alert("Type the Opperator Correctly");
+        }
+
+    </script>
+</body>
+</html>
