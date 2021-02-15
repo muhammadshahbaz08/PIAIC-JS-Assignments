@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var num1 = prompt("Enter First Number :");
+        var num2 = prompt("Enter Second Number :");
+        var result;
+        var oper = prompt("Enter the Operator Or Sign (+, -, *, / or %)");
+        if (oper === "+") {
+          result = num1 + num2;
+          alert(num1 + " " + "+" + " " + num2  + " " + "=" + " " + result);
+        }
+        else if (oper === "-") {
+          result = num1 - num2;
+          alert(num1 + " " + "-" + " " + num2  + " " + "=" + " " + result); 
+        }
+        else if (oper === "*") {
+          result = num1 * num2;
+          alert(num1 + " " + "*" + " " + num2  + " " + "=" + " " + result);  
+        }
+        else if (oper === "/") {
+          result = num1 / num2;
+          alert(num1 + " " + "/" + " " + num2  + " " + "=" + " " + result); 
+        }
+        else if (oper === "%") {
+          result = num1 % num2;
+          alert(num1 + " " + "%" + " " + num2  + " " + "=" + " " + result);  
+        }
+        else{
+            alert("Type the Opperator Correctly");
+        }
+    </script>
+</body>
+</html>
