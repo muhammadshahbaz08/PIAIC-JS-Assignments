@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        // Percentage Calculator
+        alert("'PERCENTAGE CALCULATOR'")
+        var course1 = prompt("Enter Your First Course Marks :");
+        var course2 = prompt("Enter Your Second Course Marks :");
+        var course3 = prompt("Enter Your Third Course Marks :");
+        var course4 = prompt("Enter Your Fourth Course Marks :");
+        var course5 = prompt("Enter Your Fifth Course Marks :");
+        var totalMarks = 500;
+
+        //JS  ,Treat's Number's as string so, when we add them it concatenate it. so Addition is not possible without Using Chapter 29, Function/Method "Number"
+        course1 = Number(course1);
+        course2 = Number(course2);
+        course3 = Number(course3);
+        course4 = Number(course4);
+        course5 = Number(course5);
+
+        var obtainedMarks = course1 + course2 + course3 + course4 + course5;
+        alert(obtainedMarks);        
+        var percentage = (obtainedMarks * 100) / totalMarks;//formula
+        alert("Percentage = " + percentage + "%");
+
+    </script>
+</body>
+</html>
