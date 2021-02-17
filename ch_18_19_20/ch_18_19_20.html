@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TODO Via For-Loop</title>
+</head>
+<body>
+    <script>
+
+        var courses = [];
+        var course = []; //Array for Getting Input from User
+
+       //Getting Input From User    
+        for (var i = 0; i < 5; i++) {
+           course[i] = prompt("Enter Your Course " + Number(i + 1)  + ":" );
+        }
+        alert(course);
+
+        //Pushing Course array-elements into Courses Array.
+        for (var i = 0; i < 5; i++) {
+           courses.push(course[i]);
+        }        
+        alert(courses);
+
+        //Prompting all the Entered Values by User , If he wants to Change them
+        for (var i = 0; i < 5; i++) {
+         courses[i] = prompt(course[i], courses.splice(i, 1, course[i]));
+        }
+        alert(courses); //Displaying the Updated Array
+   
+     </script>
+</body>
+</html>                      
