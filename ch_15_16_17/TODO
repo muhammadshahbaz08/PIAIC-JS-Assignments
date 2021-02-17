@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TO-DO</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var courses = [];
+        var course1 = prompt("Enter Your Course 1 :");
+        var course2 = prompt("Enter Your Course 2 :");
+        var course3 = prompt("Enter Your Course 3 :");
+        var course4 = prompt("Enter Your Course 4 :");
+        var course5 = prompt("Enter Your Course 5 :");
+        //Pushing values obtanied from User in Array.
+        courses.push(course1);
+        courses.push(course2);
+        courses.push(course3);
+        courses.push(course4);
+        courses.push(course5);
+        
+        alert(courses);
+
+        courses[0] = prompt(course1, courses.splice(0, 1, course1));
+        courses[1] = prompt(course2, courses.splice(1, 1, course2));
+        courses[2] = prompt(course3, courses.splice(2, 1, course3));
+        courses[3] = prompt(course4, courses.splice(3, 1, course4));
+        courses[4] = prompt(course5, courses.splice(4, 1, course5));
+
+        
+        alert(courses);
+     </script>
+</body>
+</html>
