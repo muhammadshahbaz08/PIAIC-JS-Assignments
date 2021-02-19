@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ch_21_to_30_1st-Assignment</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+         
+        var fractional = prompt("Enter a Decimal Value");
+        fractional = Math.ceil(fractional);
+        alert("Ceiled Fractional Value = " + fractional);
+
+        //Reversing a String
+        var text = "Hello World";
+        var sliceText = text.slice(0, 6);  //Hello
+        var revStr = '';
+        for (var i = sliceText.length-1; i >= 0; i--) {
+            revStr += sliceText[i];
+        }
+        alert(revStr);
+
+    </script>
+</body>
+</html>
