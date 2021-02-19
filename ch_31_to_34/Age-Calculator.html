@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Chapter 31 to 34 Assignment</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var name = prompt("Enter Your Name");
+        var date = prompt("Enter Your DOB (Date)");
+        var month = prompt("Enter Your DOB (Month)");
+        var year = prompt("Enter Your DOB (Year)");
+
+        console.log("Hello " + name + " Assalam-u-Alikum!");
+        
+        var dte = new Date();
+        //Setting the Date,Month,Year in Date Object.
+        var dobDate = dte.setDate(date);
+        var dobMonth = dte.setMonth(month);
+        var dobYear = dte.setYear(year);
+        var hours = dte.setHours(0);
+        var min = dte.setMinutes(0);
+        var sec = dte.setSeconds(0);
+        var miliSec = dte.setSeconds(0);
+
+        console.log("Your DOB is " + dte);
+
+        //Calculating Age
+
+        var today = new Date();
+        var diff = today.getTime() - dte.getTime();
+        var days = diff / (1000 * 60 * 60 * 24); //Calculating days 
+        days = Math.floor(days); 
+        var yeared = days / 365;
+        yeared = Math.floor(yeared);
+        var hour = diff / (1000 * 60 * 60); //Calc. Hours
+        hour = Math.floor(hour);
+        console.log("You are "+ yeared + " old");
+        console.log("Your Age in Day's "  + days);
+        console.log("Your Age in Hour's " + hour);
+
+        console.log ("Happy Birthday " + name + "!");
+
+    </script>
+    
+</body>
+</html>
