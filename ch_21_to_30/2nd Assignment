@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ch_21_to_30_2nd_Assignment</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        var input = prompt("Enter a String!" , "cloUd naTive computinG");
+        input = input.toLowerCase();
+        var firstChar = input.charAt(0).toUpperCase();
+        var secondChar = input.charAt(6).toUpperCase();
+        var remFirst = input.slice(1, 5);
+        var remSecond = input.slice(7, 12);
+        var remThird = input.slice(14);
+        var capsInput = console.log(firstChar + remFirst + " " + secondChar + remSecond +" "+ firstChar + remThird);
+        
+    </script>
+</body>
+</html>
