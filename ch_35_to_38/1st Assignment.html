@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 35 to 38 1st Assignment</title>
+</head>
+<body>
+    <h4>Chapter 35 to 38 1st Assignment</h4>
+    <!-- JS -->
+    <script>
+        function UpperCase() {
+          var input = prompt("Enter a String!" , "cloUd naTive computinG");
+          input = input.toLowerCase();
+          var firstChar = input.charAt(0).toUpperCase();
+          var secondChar = input.charAt(6).toUpperCase();
+          var remFirst = input.slice(1, 5);
+          var remSecond = input.slice(7, 12);
+          var remThird = input.slice(14);
+          var capsInput = console.log(firstChar + remFirst + " " + secondChar + remSecond +" "+ firstChar + remThird);
+        }
+        //Calling Function1
+        UpperCase();
+
+    </script>
+</body>
+</html>
