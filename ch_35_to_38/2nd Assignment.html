@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial of a Number</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>
+        function factorial() {
+            var input = prompt("Enter a +Ve Number to find Factorial :");
+            if (input < 1) {
+              alert("Factorial of -ve Number is Not Possible:!");
+            }
+            var num = input;
+            var fact = 1;
+            for (var i = num; i >= 1; i--) {
+              fact = fact * i;
+            }
+            console.log("Factorial of " + input + "= " + fact);
+        }
+        factorial();
+    </script>
+</body>
+</html>
