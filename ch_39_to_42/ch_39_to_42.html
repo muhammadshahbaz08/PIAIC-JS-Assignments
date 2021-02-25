@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pecentage Calculator</title>
+</head>
+<body>
+    <!-- JS -->
+    <script>           
+      var course=[];
+      var obtMarks,totalMarks,result=0;
+      totalMarks=500;
+      obtMarks=0;
+  
+      for(var i = 1; i <= 5; i++) {
+      course.push(Number(prompt(" Enter Course " + i + " Marks")));
+      obtMarks = obtMarks + course.pop();  
+      }
+      var percentage = obtMarks * 100 / totalMarks;
+      // For Finding Grade's Using Switch Case.
+      var grade;
+      switch(true) {
+      case(percentage >= 90 && percentage <= 100):
+        grade = "A+";
+        break; 
+      case(percentage >= 75 && percentage <= 89):
+        grade = "A";
+        break;
+      case(percentage >= 60 && percentage <= 74):
+        grade = "B";
+        break;
+      case(percentage >= 45 && percentage <= 60):
+        grade = "C";
+        break;
+      case(percentage >= 30 && percentage <= 44):
+        grade = "D";
+        break;
+      case(percentage >= 0 && percentage <= 29):
+        grade = "F";
+      } 
+    
+      alert("Total Mark's = " + totalMarks + "." + "\n" + "Obtained Mark's = " + obtMarks + "." +"\n" + "Percentage = " + percentage +"%" + "\n" +"Grade = " + grade + ".");  //\n for new-line alert
+    
+      
+    </script>
+</body>
+</html>
